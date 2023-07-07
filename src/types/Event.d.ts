@@ -1,6 +1,9 @@
-import { ClientEvents, Events, Client } from "discord.js";
+import { ClientEvents, Events } from "discord.js";
+import { Pikachu } from "../structures/Client";
 
 export interface DiscordEvent {
     name: `${Events}`,
-    run: (client: Client, ...args?: any[] ) => any
+    run: (client: Pikachu, ...args?: any ) => any
 }
+
+// exportar tipos eventos

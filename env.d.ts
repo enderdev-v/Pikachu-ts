@@ -1,7 +1,12 @@
-declare namespace NodeJS {
-	interface ProcessEnv {
-		token: string | undefined;
+declare global {
+	namespace NodeJS {
+		interface ProcessEnv {
+			token: string;
+			clientid: string;
+			guildid: string;
+		}
 	}
 }
 
-export{};
+
+export { };
